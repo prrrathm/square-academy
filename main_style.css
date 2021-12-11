@@ -1,0 +1,257 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #fff;
+    font-family: 'crimson text',sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+h1, h2{
+    margin: 0;
+    font-weight: 600;
+    font-family: 'Sen',sans-serif;
+    letter-spacing: 2px;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+.nav, #logo{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+.nav{
+    font-family: 'nunito';
+    font-size: 30px;
+    padding-top:20px;
+    padding-bottom:10px;
+    text-align: right;
+    z-index: 5;
+    font-weight: 700;
+    color: #101010;
+    background-color: #fff;
+}
+.nav a{
+    margin-right: 20px;
+    position: relative;
+    width: 20px;
+    padding: 0 10px;
+}
+.nav a::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20%;
+    height: 100%;
+    z-index: -1;
+    transition: 600ms;
+}
+.nav a:hover::before{
+    width: 100%;
+    background-color: aquamarine;
+}
+.part{
+    min-height: 100vh;
+    font-size: 18px;
+    
+}
+#one h1,#one p,#one img{
+    display: inline-block;
+    position: relative;
+    top: 100px;
+}
+#one h1{
+    left: 150px;
+    width: 250px;
+    font-size: 40px;
+    padding: 10px;
+    padding-bottom: 2px;
+}
+#one h1::after{
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    background-color: aquamarine;
+    z-index: -1;
+}
+#one h1::after:hover{
+    animation-name: grow;
+    animation-duration: 600ms;
+    animation-delay: 1ms;
+}
+@keyframes grow{
+    form{width: 40%;}
+    to{width: 100%;}
+}
+#one p{
+    left: 300px;
+    width: 600px;
+    margin-bottom: 20px;
+}
+#one img{
+    top: -100px;
+    width: 1200px;
+    margin: 20px;
+    clip-path: polygon(0 40%, 100% 40%, 100% 100%, 0 100%);
+}
+#one::before, #one::after{
+    content: '';
+    z-index: -2;
+    position: absolute;
+}
+#one::before{
+    top: 300px;
+    left: 250px;
+    height: 750px;
+    width: 300px;
+    border: 20px solid #eeaa40;
+    transform: rotate(-5deg);
+}
+#one::after{
+    top: 130px;
+    right: -250px;
+    height: 100px;
+    width: 350px;
+    border: 15px solid #ee9090;
+    transform: rotate(15deg);
+}
+#two{
+    display: flex;
+    margin: 40px;
+}
+#two h1, #two p{
+    display: inline-block;
+    position: relative;
+}
+#two h1{
+    width: 40%;
+    font-size: 60px;
+    padding-top: 20px;
+    height: 80vh;
+    background-color: #aea;
+}
+#two p{
+    margin: 100px;
+    width: 40%;
+    padding: 60px;
+    height: 30vh;
+    font-size: 20px;
+}
+#two img{
+    margin-top: 20px;
+    height: 120%;
+
+}
+#two::before{
+    content: '';
+    z-index: -2;
+    position: absolute;
+    top: 1300px;
+    right: -50px;
+    height: 200px;
+    width: 250px;
+    border: 20px solid #cc9090;
+    transform: rotate(-15deg);
+}
+#three{
+    margin-top: 150px;
+}
+#three h1{
+    font-size: 60px;
+    margin-left: 100px;
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+}
+#three h1::after{
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: lightseagreen;
+    z-index: -1;
+    transition: 600ms;
+}
+.subjects{
+    display: flex;
+    margin-top: 50px;
+}
+.subject-box{
+    background: lightsalmon;
+    margin: 20px;
+    height: 50vh;
+    padding: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 100ms;
+}
+.subject-box:hover{
+    transform: scale(1.05,1.05);
+}
+.subject-box p{
+    font-size: 21px;
+    margin-top: 150px;
+}
+.subject-box h2{
+    font-size: 30px;
+    display: inline-block;
+    width: 50px;
+    padding-bottom: 10px;
+    border-bottom: 10px solid aquamarine;
+    transition: 600ms;
+}
+.subject-box h2:hover{
+    width: 120px;
+}
+#three::before{
+    content: '';
+    z-index: -2;
+    position: absolute;
+    top: 2000px;
+    left: -60px;
+    height: 350px;
+    width: 1700px;
+    border: 10px solid tomato;
+    transform: rotate(25deg);
+}
+#four{
+    margin: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: seagreen;
+    min-height: 80vh;
+    color: #eee;
+    display: flex;
+}
+#four h1{
+    font-size: 70px;
+}
+#address{
+    display: inline-block;
+    width: 45%;
+    right: 200px;
+    font-size: 18px;
+    padding: 30px;
+    padding-top: 100px;
+    text-align: center;
+    font-family: 'nunito';
+}
+#googleMap{
+    width: 55%;
+    height: 80vh;
+    display: inline-block;
+    position: relative;
+}

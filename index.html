@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main_style.css">
+    <script src="jquery3.js"></script>
+</head>
+<body >
+    <div class="nav">
+        <a href="#one">Home</a>
+        <a href="#two">About</a>
+        <a href="#three">Courses</a>
+        <a href="#four">Contact</a>
+    </div>
+    <div class="part" id="one">
+        <h1>The Square Academy</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil iste nesciunt nostrum earum mollitia itaque? Libero, eos non. Ipsum voluptatem modi eum vitae culpa sequi sed, dolores tempore eveniet excepturi.            
+        </p>
+        <center><img src="./assets/people.jpg"></center>
+    </div>
+    <div class="part" id="two">
+        <h1><text style="margin-left: 30px;">OUR STORY</text> <br><img src="./assets/boy.jpg"> 
+        </h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, provident pariatur perspiciatis earum corrupti, iure doloribus eos placeat vero, facere temporibus vel ipsam voluptas excepturi delectus quam quas accusantium voluptatibus.
+            <br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quisquam sequi ipsum incidunt. Quis praesentium hic quos laboriosam. Architecto officia commodi cum reiciendis a repudiandae culpa sit maiores asperiores consequuntur?
+            <br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, provident pariatur perspiciatis earum corrupti, iure doloribus eos placeat vero, facere temporibus vel ipsam voluptas excepturi delectus quam quas accusantium voluptatibus.
+        </p>
+    </div>
+    <div class="part" id="three">
+        <h1>Courses</h1>
+        <div class="subjects">
+            <div class="subject-box" style="background: coral">
+                <h2>Physics</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi fugiat ratione adipisci fugit odit ducimus, vel amet, debitis tenetur nihil ab temporibus dolorem quo perferendis fuga similique repellat minima quae.</p>
+            </div>
+            <div class="subject-box" style="background: lightpink">
+                <h2>Chemistry</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi fugiat ratione adipisci fugit odit ducimus, vel amet, debitis tenetur nihil ab temporibus dolorem quo perferendis fuga similique repellat minima quae.</p>
+            </div>
+            <div class="subject-box" style="background: lightgreen">
+                <h2>Maths</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi fugiat ratione adipisci fugit odit ducimus, vel amet, debitis tenetur nihil ab temporibus dolorem quo perferendis fuga similique repellat minima quae.</p>
+            </div>
+        </div>
+    </div>
+    <div class="part" id="four">
+        <div id="googleMap"></div>
+        <div id="address">
+            <h1>CONTACT</h1><br>
+            Square Academy,<br> L - 294, Sector 12, Block L,<br> Pratap Vihar, Ghaziabad,<br> Uttar Pradesh 201009
+            610-819-456<br>/info@squareacademy.edu
+            <br><br>Let's Connect.
+        </div>
+    </div>
+</body>
+<script>
+    function myMap() {
+    var mapProp= {
+      center:new google.maps.LatLng(29.645518,77.411121),
+      zoom:5,
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    }
+    </script>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQNM70CAgAmT_2-XmKpzuVvRwRQ_TkiXM&callback=myMap"></script>    
+</html>
